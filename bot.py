@@ -51,7 +51,7 @@ async def logUserBot():
         messages_list = await getMessagesFromGroup(client, spammer_group)
             
         try:
-            await client.send_message("@infogrltdf2", f"<b>CANTIDAD DE MENSAJES CONSEGUIDOS PARA PUBLICAR</b> <code>{len(messages_list)-1}</code>",parse_mode="HTML")
+            await client.send_message("me", f"<b>CANTIDAD DE MENSAJES CONSEGUIDOS PARA PUBLICAR</b> <code>{len(messages_list)-1}</code>",parse_mode="HTML")
         except:
             pass
             
@@ -80,6 +80,7 @@ async def logUserBot():
 if __name__ == "__main__":
     asyncio.run(logUserBot())
     
+
 
 
 
